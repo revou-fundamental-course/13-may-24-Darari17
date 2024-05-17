@@ -1,0 +1,14 @@
+/* css */
+
+.section-content {
+    background-color: darkblue;
+    padding-block: 10px;
+    /* align-items: center; */
+    text-align: center;
+    color: white;
+    
+}
+
+.section-content>h2 {
+    margin: 0;
+}
