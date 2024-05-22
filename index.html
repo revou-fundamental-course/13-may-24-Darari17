@@ -3,22 +3,103 @@
     <head>
         <title>Kalkulator Matematik</title>
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
 
     <body>
         <header>
-            <h1>WELCOME TO MY KATIK</h1>
-        <section>
-            <p>Halo, selamat datang di Katik.</p>
-            <p>Web sederhana untuk menghitung luas dan bangunan.</p>
-        </section>
+            <h1 class="header">WELCOME TO MY KATIK</h1>
+            <section class="sub-header">
+                <p>Halo, selamat datang di Katik.</p>
+                <p>Web sederhana untuk menghitung luas dan keliling segitiga.</p>
+            </section>
         </header>
-
         <section>
-            <div class="section-content">
+            <div class="SEGITIGA">
                 <h2>SEGITIGA</h2>
             </div>
         </section>
+        <section>
+            <button type="button" onclick="hideOrShow()" id="kll-segitiga"><u>Luas atau Keliling Segitiga</u></button>
+        </section>
         
+
+<!-- LUAS SEGITIGA -->
+        <section id="luas-section">
+            <div class="luas-segitiga">
+                <h2>LUAS SEGITIGA</h2>
+            </div>
+            <div class="gambar-rumus-luas-segitiga">
+                <img src="assets/luas segitiga.png">
+            </div>
+            <div>
+                <p>Yang dimana rumus luas segitiga adalah :</p>
+                <p>Luas Segitiga = 1/2 x alas x tinggi</p>
+            </div>
+            <hr/>
+            <section>
+                <header>
+                    <h2>Hitung Luas Segitiga</h2>
+                </header>
+                <section>
+                    <form id="form-luas">
+                        <h3 id="setengah" value="0.5">&#189</h3>
+                        <input placeholder="Alas" id="alas" type="number">
+                        <br />
+                        <input placeholder="Tinggi" id="tinggi" type="number">
+                        <br />
+                        <p><b>Diketahui:...</b></p>
+                        <div id="hasil-luas-container">
+                            <p id="hasil_luas">Hasil Luas</p>
+                        </div>
+                        <div class="button">
+                            <button type="button" onclick="hitungluas()" id="hitung-button">HITUNG</button>
+                            <button type="reset" id="reset-button">RESET</button>
+                        </div>                     
+                    </form> 
+                </section>
+            </section>
+        </section>
+        
+
+
+<!-- KELILING SEGITIGA -->
+        <section id="keliling-section">
+            <div class="keliling-segitiga">
+                <h2>KELILING SEGITIGA</h2>
+            </div>
+            <div class="gambar-rumus-keliling-segitiga">
+                <img src="assets/keliling-segitiga.png">
+            </div>
+            <div>
+                <p>Yang dimana rumus luas keliling adalah :</p>
+                <p>Keliling Segitiga = a + b + c</p>
+            </div>
+            <hr/>
+            <section>
+                <header>
+                    <h2>Hitung Keliling Segitiga</h2>
+                </header>
+                <section>
+                    <form id="form-keliling">
+                        <input placeholder="a" id="a" type="number"><br />
+                        <input placeholder="b" id="b" type="number"><br />
+                        <input placeholder="c" id="c" type="number"><br />
+                        <p><b>Diketahui:...</b></p>
+                        <div id="hasil_keliling_container">
+                            <p id="hasil_keliling">Hasil Keliling</p>
+                        </div>
+                        <div class="button">
+                            <button type="button" onclick="hitungkeliling()" id="hitung-button">HITUNG</button>
+                            <button type="reset" id="reset-button">RESET</button>
+                        </div>    
+                    </form>
+                </section>
+            </section>
+        </section>
+        
+
+    
+    <script src="./js/script.js"></script>
     </body>
 </html>
